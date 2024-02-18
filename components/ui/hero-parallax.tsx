@@ -108,7 +108,7 @@ export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-21  md:py-20 lg:py-40 px-16 w-full  left-0 top-0">
             <h1 className="text-2xl md:text-5xl lg:text-6xl xl:text-7xl font-bold dark:text-white tracking-tighter">
-                Hello there! I'm Joaquín, and I specialize in front-end web development.
+                Hello there! I&apos;m Joaquín, and I specialize in front-end web development.
                 With a keen eye for design, I craft engaging, functional and visually
                 appealing user experiences.
             </h1>
