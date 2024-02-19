@@ -10,15 +10,18 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export const HeroParallax = ({
     products,
+    className,
 }: {
     products: {
         title: string;
         link: string;
         thumbnail: string;
     }[];
+    className: string;
 }) => {
     const firstRow = products.slice(0, 5);
     const secondRow = products.slice(5, 10);
@@ -60,7 +63,7 @@ export const HeroParallax = ({
     return (
         <div
             ref={ref}
-            className="h-[300vh] py-24 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+            className={cn("h-[300vh] py-24 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]", className)}
         >
             <Header />
             <motion.div
@@ -106,9 +109,9 @@ export const HeroParallax = ({
 
 export const Header = () => {
     return (
-        <div className="max-w-7xl relative mx-auto py-21  md:py-20 lg:py-40 px-16 w-full left-0 top-0">
+        <div className="max-w-7xl relative mx-auto py-36 sm:py-21  md:py-20 lg:py-40 px-16 w-full left-0 top-0">
             <h1 className="text-2xl md:text-5xl lg:text-6xl xl:text-7xl font-bold dark:text-white tracking-tighter">
-                Hello there! I&apos;m Joaquín, and I specialize in front-end web development.
+                Hello there! I&apos;m Joaquín, and I specialize full stack development.
                 With a keen eye for design, I craft engaging, functional and visually
                 appealing user experiences.
             </h1>

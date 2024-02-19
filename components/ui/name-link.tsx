@@ -18,7 +18,7 @@ const NameLink: React.FC<NameLinkProps> = ({
         <>
             <Link
                 href={href}
-                className={cn("text-sm font-medium transition-colors hover:text-primary", className)}
+                className={cn("text-xs sm:text-sm font-medium transition-colors hover:text-primary", className)}
             >
                 {name}
             </Link>

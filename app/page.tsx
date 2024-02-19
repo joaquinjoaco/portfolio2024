@@ -78,6 +78,7 @@ export default function Home() {
     <div>
       <HeroParallax
         products={products}
+        className="hidden sm:block"
       />
     </div>
   );
