@@ -44,7 +44,7 @@ export default function Home() {
     {
       title: "Eventyr Banlist",
       href: "https://github.com/joaquinjoaco/eventyrbanlist",
-      thumbnail: "/eventyr-banlist.png",
+      thumbnail: "/eventyrbanlist.png",
     },
     {
       title: "Eventyr Server Guide",
@@ -113,7 +113,7 @@ export default function Home() {
     {
       title: "Eventyr Banlist",
       href: "https://github.com/joaquinjoaco/eventyrbanlist",
-      thumbnail: "/eventyr-banlist.png",
+      thumbnail: "/eventyrbanlist.png",
     },
     {
       title: "Eventyr Server Guide",
