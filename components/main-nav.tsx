@@ -16,17 +16,16 @@ export function MainNav({
 
     const routes = [
         {
-            href: `/aboutme`,
+            href: `#about`,
             label: 'About me',
-            active: pathname === `/aboutme`,
-            title: "About me!"
+            // active: pathname === `/aboutme`,
+            title: "About me"
         },
         {
             href: `https://github.com/joaquinjoaco`,
             label: 'GitHub',
             target: "_blank",
-            title: "My GitHub!"
-            // active: pathname === `/aboutme`,
+            title: "My GitHub"
         }
     ];
 
@@ -41,8 +40,8 @@ export function MainNav({
                     target={route.target}
                     title={route.title}
                     className={cn(
-                        "text-xs sm:text-sm font-medium transition-colors hover:text-primary",
-                        route.active ? "text-black dark:text-white" : "text-muted-foreground"
+                        "text-xs sm:text-sm font-medium transition-colors text-muted-foreground hover:text-primary",
+                        // route.active ? "text-black dark:text-white" : "text-muted-foreground"
                     )}
                 >
                     {route.label}

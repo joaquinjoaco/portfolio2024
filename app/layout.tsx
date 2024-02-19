@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/providers/theme-provider";
-import Noise from "@/components/noise";
-import { Transition } from "@headlessui/react";
+import Noise from "@/components/ui/noise";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>

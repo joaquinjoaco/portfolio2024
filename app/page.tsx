@@ -1,85 +1,153 @@
-import { HeroParallax } from "@/components/ui/hero-parallax";
+import About from "@/components/about-me";
+import { Header as MobileHeader } from "@/components/header";
+import { HeroParallax } from "@/components/hero-parallax";
+import { ParallaxScroll } from "@/components/parallax-scroll";
+
 
 export default function Home() {
-  const products = [
+  const projects = [
     {
       title: "XLVI International Congress of Theoretical Chemists of Latin Expression",
-      link: "https://quitelcongress-showcase.netlify.app/",
+      href: "https://quitelcongress-showcase.netlify.app/",
       thumbnail: "/quitel.png",
     },
     {
       title: "Ecommerce Store",
-      link: "https://ecommerce-store-ten-sandy.vercel.app/",
+      href: "https://github.com/joaquinjoaco/ecommerce-store/",
       thumbnail: "/ecommerce-store.png",
     },
     {
       title: "Ecommerce Admin",
-      link: "https://github.com/joaquinjoaco/ecommerce-admin",
+      href: "https://github.com/joaquinjoaco/ecommerce-admin",
       thumbnail: "/ecommerce-admin.png",
     },
     {
       title: "MiFicha APP",
-      link: "https://github.com/joaquinjoaco/ficha-medica",
+      href: "https://github.com/joaquinjoaco/ficha-medica",
       thumbnail: "/ficha-medica.png",
     },
     {
       title: "Laundrify CRUD",
-      link: "https://laundrifycrudtest.netlify.app/home",
+      href: "https://laundrifycrudtest.netlify.app/home",
       thumbnail: "/laundrify-crud.png",
     },
     {
       title: "sorvisLater",
-      link: "https://sorvislater.netlify.app/login",
+      href: "https://sorvislater.netlify.app/login",
       thumbnail: "/sorvisLater.png",
     },
     {
       title: "MiFicha APP",
-      link: "https://github.com/joaquinjoaco/ficha-medica",
+      href: "https://github.com/joaquinjoaco/ficha-medica",
       thumbnail: "/ficha-medica.png",
     },
     {
       title: "Eventyr Banlist",
-      link: "https://eventyrbanlistfirebaserealtime.netlify.app/",
+      href: "https://github.com/joaquinjoaco/eventyrbanlist",
       thumbnail: "/eventyr-banlist.png",
     },
     {
       title: "Eventyr Server Guide",
-      link: "https://guiaeventyr.netlify.app/",
+      href: "https://guiaeventyr.netlify.app/",
       thumbnail: "/eventyr-guia.png",
     },
     {
       title: "Bandicoot Website",
-      link: "https://bandicoot.netlify.app/",
+      href: "https://bandicoot.netlify.app/",
       thumbnail: "/bandicoot.png",
     },
     {
       title: "Laundrify landing page",
-      link: "https://lavanderialaundrify.netlify.app/",
+      href: "https://lavanderialaundrify.netlify.app/",
       thumbnail: "/laundrify-landing.png",
     },
     {
       title: "Laundrify CRUD",
-      link: "https://laundrifycrudtest.netlify.app/home",
+      href: "https://github.com/joaquinjoaco/laundrify-crud",
       thumbnail: "/laundrify-crud.png",
     },
     {
       title: "Bandicoot Website",
-      link: "https://bandicoot.netlify.app/",
+      href: "https://bandicoot.netlify.app/",
       thumbnail: "/bandicoot.png",
     },
     {
       title: "La física segun dios",
-      link: "https://lafisicasegundios.netlify.app/",
+      href: "https://lafisicasegundios.netlify.app/",
       thumbnail: "/lafisicasegundios.png",
     },
   ];
 
+  const mobileProjects = [
+    {
+      title: "XLVI International Congress of Theoretical Chemists of Latin Expression",
+      href: "https://quitelcongress-showcase.netlify.app/",
+      thumbnail: "/quitel.png",
+    },
+    {
+      title: "Ecommerce Store",
+      href: "https://github.com/joaquinjoaco/ecommerce-store/",
+      thumbnail: "/ecommerce-store.png",
+    },
+    {
+      title: "Ecommerce Admin",
+      href: "https://github.com/joaquinjoaco/ecommerce-admin",
+      thumbnail: "/ecommerce-admin.png",
+    },
+    {
+      title: "MiFicha APP",
+      href: "https://github.com/joaquinjoaco/ficha-medica",
+      thumbnail: "/ficha-medica.png",
+    },
+    {
+      title: "Laundrify CRUD",
+      href: "https://laundrifycrudtest.netlify.app/home",
+      thumbnail: "/laundrify-crud.png",
+    },
+    {
+      title: "sorvisLater",
+      href: "https://sorvislater.netlify.app/login",
+      thumbnail: "/sorvisLater.png",
+    },
+
+    {
+      title: "Eventyr Banlist",
+      href: "https://github.com/joaquinjoaco/eventyrbanlist",
+      thumbnail: "/eventyr-banlist.png",
+    },
+    {
+      title: "Eventyr Server Guide",
+      href: "https://guiaeventyr.netlify.app/",
+      thumbnail: "/eventyr-guia.png",
+    },
+    {
+      title: "Bandicoot Website",
+      href: "https://bandicoot.netlify.app/",
+      thumbnail: "/bandicoot.png",
+    },
+    {
+      title: "Laundrify landing page",
+      href: "https://lavanderialaundrify.netlify.app/",
+      thumbnail: "/laundrify-landing.png",
+    },
+    {
+      title: "La física segun dios",
+      href: "https://lafisicasegundios.netlify.app/",
+      thumbnail: "/lafisicasegundios.png",
+    },
+  ];
   return (
     <div>
+      <MobileHeader className="lg:hidden" />
       <HeroParallax
-        products={products}
-        className="hidden sm:block"
+        projects={projects}
+        className="hidden lg:block"
       />
+      <ParallaxScroll
+        projects={mobileProjects}
+        className="lg:hidden"
+      />
+      <About className="pb-[25vh]" />
     </div>
   );
 }

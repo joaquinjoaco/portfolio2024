@@ -19,13 +19,14 @@ const NameLink: React.FC<NameLinkProps> = ({
             <Link
                 href={href}
                 className={cn("text-xs sm:text-sm font-medium transition-colors hover:text-primary", className)}
+                title="Thats me!"
             >
                 {name}
             </Link>
             <Image
                 src={"/favicon.ico"}
-                width={30}
-                height={30}
+                width={24}
+                height={24}
                 alt="ficus" />
         </>
     );

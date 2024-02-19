@@ -9,23 +9,24 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+
 import { cn } from "@/lib/utils";
+import { Header } from "./header";
 
 export const HeroParallax = ({
-    products,
+    projects,
     className,
 }: {
-    products: {
+    projects: {
         title: string;
-        link: string;
+        href: string;
         thumbnail: string;
     }[];
-    className: string;
+    className?: string;
 }) => {
-    const firstRow = products.slice(0, 5);
-    const secondRow = products.slice(5, 10);
-    const thirdRow = products.slice(10, 15);
+    const firstRow = projects.slice(0, 5);
+    const secondRow = projects.slice(5, 10);
+    const thirdRow = projects.slice(10, 15);
     const ref = React.useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -49,7 +50,7 @@ export const HeroParallax = ({
         springConfig
     );
     const opacity = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+        useTransform(scrollYProgress, [0, 0.1], [0.1, 1]),
         springConfig
     );
     const rotateZ = useSpring(
@@ -73,21 +74,20 @@ export const HeroParallax = ({
                     translateY,
                     opacity,
                 }}
-                className=""
             >
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-                    {firstRow.map((product) => (
+                    {firstRow.map((project) => (
                         <ProductCard
-                            product={product}
+                            project={project}
                             translate={translateX}
-                            key={product.title}
+                            key={project.title}
                         />
                     ))}
                 </motion.div>
                 <motion.div className="flex flex-row  mb-20 space-x-20 ">
                     {secondRow.map((product) => (
                         <ProductCard
-                            product={product}
+                            project={product}
                             translate={translateXReverse}
                             key={product.title}
                         />
@@ -96,7 +96,7 @@ export const HeroParallax = ({
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
                     {thirdRow.map((product) => (
                         <ProductCard
-                            product={product}
+                            project={product}
                             translate={translateX}
                             key={product.title}
                         />
@@ -107,28 +107,13 @@ export const HeroParallax = ({
     );
 };
 
-export const Header = () => {
-    return (
-        <div className="max-w-7xl relative mx-auto py-36 sm:py-21  md:py-20 lg:py-40 px-16 w-full left-0 top-0">
-            <h1 className="text-2xl md:text-5xl lg:text-6xl xl:text-7xl font-bold dark:text-white tracking-tighter">
-                Hello there! I&apos;m Joaquín, and I specialize full stack development.
-                With a keen eye for design, I craft engaging, functional and visually
-                appealing user experiences.
-            </h1>
-            <p className="flex gap-x-2 items-center max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-                <MapPin className="h-5 w-5" />Montevideo, Uruguay
-            </p>
-        </div>
-    );
-};
-
 export const ProductCard = ({
-    product,
+    project,
     translate,
 }: {
-    product: {
+    project: {
         title: string;
-        link: string;
+        href: string;
         thumbnail: string;
     };
     translate: MotionValue<number>;
@@ -141,24 +126,24 @@ export const ProductCard = ({
             whileHover={{
                 y: -20,
             }}
-            key={product.title}
-            className="group/product h-96 w-[30rem] relative flex-shrink-0 rounded-2xl"
+            key={project.title}
+            className="group/product h-96 w-[30rem] relative flex-shrink-0"
         >
             <Link
-                href={product.link}
-                className="block group-hover/product:shadow-2xl rounded-2xl"
+                href={project.href}
+                className="block rounded-2xl"
                 target="_blank"
             >
                 <Image
-                    src={product.thumbnail}
+                    src={project.thumbnail}
                     height="400"
                     width="400"
-                    className="object-cover object-top absolute h-full w-full inset-0 rounded-2xl opacity-80 hover:opacity-100 transition-opacity"
-                    alt={product.title}
+                    className="object-cover object-top absolute h-full w-full inset-0 rounded-2xl dark:opacity-80 dark:hover:opacity-100 transition-opacity"
+                    alt={project.title}
                 />
                 <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 pointer-events-none"></div>
                 <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white font-semibold bg-gradient-to-r from-orange-600 to-fuchsia-800 rounded-2xl py-2 px-4">
-                    {product.title}
+                    {project.title}
                 </h2>
             </Link>
 
