@@ -10,12 +10,12 @@ export default function Home() {
     {
       title: "Ecommerce Store",
       link: "https://ecommerce-store-ten-sandy.vercel.app/",
-      thumbnail: "/store.png",
+      thumbnail: "/ecommerce-store.png",
     },
     {
       title: "Ecommerce Admin",
       link: "https://github.com/joaquinjoaco/ecommerce-admin",
-      thumbnail: "/admin.png",
+      thumbnail: "/ecommerce-admin.png",
     },
     {
       title: "MiFicha APP",
@@ -72,7 +72,8 @@ export default function Home() {
       link: "https://lafisicasegundios.netlify.app/",
       thumbnail: "/lafisicasegundios.png",
     },
-  ]
+  ];
+
   return (
     <div>
       <HeroParallax
