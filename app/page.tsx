@@ -3,7 +3,6 @@ import { Header as MobileHeader } from "@/components/header";
 import { HeroParallax } from "@/components/hero-parallax";
 import { ParallaxScroll } from "@/components/parallax-scroll";
 
-
 export default function Home() {
   const projects = [
     {
@@ -113,7 +112,7 @@ export default function Home() {
     {
       title: "Eventyr Banlist",
       href: "https://github.com/joaquinjoaco/eventyrbanlist",
-      thumbnail: "/eventyrbanlist.png",
+      thumbnail: "/eventyrfirebase.png",
     },
     {
       title: "Eventyr Server Guide",
@@ -147,7 +146,7 @@ export default function Home() {
         projects={mobileProjects}
         className="lg:hidden"
       />
-      <About className="pb-[25vh]" />
+      <About className="pb-[25vh] h-[100vh]" />
     </div>
   );
 }
