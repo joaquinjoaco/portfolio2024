@@ -138,7 +138,7 @@ export const ProductCard = ({
                     src={project.thumbnail}
                     height="400"
                     width="400"
-                    className="object-cover object-top absolute h-full w-full inset-0 rounded-2xl dark:opacity-80 dark:hover:opacity-100 transition-opacity"
+                    className="object-cover object-top absolute h-full w-full inset-0 rounded-2xl shadow-2xl dark:shadow-none dark:opacity-80 dark:hover:opacity-100 transition-opacity"
                     alt={project.title}
                 />
                 <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 pointer-events-none"></div>

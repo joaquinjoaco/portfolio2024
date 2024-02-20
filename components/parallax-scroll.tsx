@@ -52,7 +52,7 @@ export const ParallaxScroll = ({
                             >
                                 <Image
                                     src={project.thumbnail}
-                                    className="h-40 w-full object-cover object-top rounded-2xl gap-10 !m-0 !p-0"
+                                    className="h-40 w-full object-cover object-top shadow-lg rounded-2xl gap-10 !m-0 !p-0"
                                     height="400"
                                     width="400"
                                     alt="thumbnail"
@@ -70,7 +70,7 @@ export const ParallaxScroll = ({
                             >
                                 <Image
                                     src={project.thumbnail}
-                                    className="h-40 w-full object-cover object-top rounded-2xl gap-10 !m-0 !p-0"
+                                    className="h-40 w-full object-cover object-top shadow-lg rounded-2xl gap-10 !m-0 !p-0"
                                     height="400"
                                     width="400"
                                     alt="thumbnail"
@@ -88,7 +88,7 @@ export const ParallaxScroll = ({
                             >
                                 <Image
                                     src={project.thumbnail}
-                                    className="h-40 w-full object-cover object-top rounded-2xl gap-10 !m-0 !p-0"
+                                    className="h-40 w-full object-cover object-top shadow-lg rounded-2xl gap-10 !m-0 !p-0"
                                     height="400"
                                     width="400"
                                     alt="thumbnail"
