@@ -79,6 +79,26 @@ export default function Home() {
 
   const mobileProjects = [
     {
+      title: "MiFicha APP",
+      href: "https://github.com/joaquinjoaco/ficha-medica",
+      thumbnail: "/ficha-medica.png",
+    },
+    {
+      title: "Laundrify CRUD",
+      href: "https://laundrifycrudtest.netlify.app/home",
+      thumbnail: "/laundrify-crud.png",
+    },
+    {
+      title: "sorvisLater",
+      href: "https://sorvislater.netlify.app/login",
+      thumbnail: "/sorvisLater.png",
+    },
+    {
+      title: "Eventyr Server Guide",
+      href: "https://guiaeventyr.netlify.app/",
+      thumbnail: "/eventyr-guia.png",
+    },
+    {
       title: "XLVI International Congress of Theoretical Chemists of Latin Expression",
       href: "https://quitelcongress-showcase.netlify.app/",
       thumbnail: "/quitel.png",
@@ -94,30 +114,9 @@ export default function Home() {
       thumbnail: "/ecommerce-admin.png",
     },
     {
-      title: "MiFicha APP",
-      href: "https://github.com/joaquinjoaco/ficha-medica",
-      thumbnail: "/ficha-medica.png",
-    },
-    {
-      title: "Laundrify CRUD",
-      href: "https://laundrifycrudtest.netlify.app/home",
-      thumbnail: "/laundrify-crud.png",
-    },
-    {
-      title: "sorvisLater",
-      href: "https://sorvislater.netlify.app/login",
-      thumbnail: "/sorvisLater.png",
-    },
-
-    {
       title: "Eventyr Banlist",
       href: "https://github.com/joaquinjoaco/eventyrbanlist",
       thumbnail: "/eventyrfirebase.png",
-    },
-    {
-      title: "Eventyr Server Guide",
-      href: "https://guiaeventyr.netlify.app/",
-      thumbnail: "/eventyr-guia.png",
     },
     {
       title: "Bandicoot Website",
@@ -146,7 +145,7 @@ export default function Home() {
         projects={mobileProjects}
         className="lg:hidden"
       />
-      <About className="pb-[25vh] h-[100vh]" />
+      <About className="scroll-m-32 sm:scroll-m-80 h-[100vh]" />
     </div>
   );
 }

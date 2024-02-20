@@ -24,8 +24,8 @@ const About = ({
                 <br />
                 Over the past three years, I&apos;ve been self-educating myself in the fields of front-end development and both User Experience and User Interface design.
 
-                I&apos;m currently stepping into Full Stack development working with a range of technologies such as NextJS,
-                React / React Native, Javascript, Typescript, HTML, CSS, MySQL, PostgreSQL, Prisma,
+                I&apos;m currently stepping into Full Stack development working with a range of tools and technologies such as NextJS,
+                React / React Native, Javascript, Typescript, HTML, CSS, MySQL, PostgreSQL, Prisma, TablePlus,
                 Firebase, Github, Figma.
                 <br />
                 I&apos;ve also used VueJS, Angular, VB .NET, C/C++ and Java.
