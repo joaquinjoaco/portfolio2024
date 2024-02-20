@@ -43,7 +43,7 @@ export default function Home() {
     {
       title: "Eventyr Banlist",
       href: "https://github.com/joaquinjoaco/eventyrbanlist",
-      thumbnail: "/eventyrbanlist.png",
+      thumbnail: "/eventyrfirebase.png",
     },
     {
       title: "Eventyr Server Guide",
