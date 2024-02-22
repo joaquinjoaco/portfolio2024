@@ -1,9 +1,9 @@
 // Desktop projects array for Parallax Hero.
 export const desktopProjects = [
     {
-        title: "QUITEL Congress 2023",
-        href: "https://quitelcongress-showcase.netlify.app/",
-        thumbnail: "/quitel.png",
+        title: "My old portfolio",
+        href: "https://joaquinjoaco.github.io/portfolio/",
+        thumbnail: "/oldportfolio.png",
     },
     {
         title: "Ecommerce Store",
@@ -21,9 +21,9 @@ export const desktopProjects = [
         thumbnail: "/ficha-medica.png",
     },
     {
-        title: "Laundrify CRUD",
-        href: "https://laundrifycrudtest.netlify.app/home",
-        thumbnail: "/laundrify-crud.png",
+        title: "My old portfolio",
+        href: "https://joaquinjoaco.github.io/portfolio/",
+        thumbnail: "/oldportfolio.png",
     },
     {
         title: "sorvisLater",
@@ -31,9 +31,9 @@ export const desktopProjects = [
         thumbnail: "/sorvisLater.png",
     },
     {
-        title: "MiFicha APP",
-        href: "https://github.com/joaquinjoaco/ficha-medica",
-        thumbnail: "/ficha-medica.png",
+        title: "QUITEL Congress 2023",
+        href: "https://quitelcongress-showcase.netlify.app/",
+        thumbnail: "/quitel.png",
     },
     {
         title: "Eventyr Banlist",
@@ -71,9 +71,9 @@ export const desktopProjects = [
         thumbnail: "/lafisicasegundios.png",
     },
     {
-        title: "My old portfolio",
-        href: "https://joaquinjoaco.github.io/portfolio/",
-        thumbnail: "/oldportfolio.png",
+        title: "Laundrify landing page",
+        href: "https://lavanderialaundrify.netlify.app/",
+        thumbnail: "/laundrify-landing.png",
     },
 ];
 
