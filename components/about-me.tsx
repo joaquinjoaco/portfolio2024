@@ -32,6 +32,12 @@ const About = ({
                 <br />
                 <br />
                 Check out my Linkedin & GitHub!
+                <Link
+                    href={"https://drive.google.com/file/d/1z3wG_oBuzhRWHJNweGId3dgk9AtOx8xK/view"}
+                    target="_blank"
+                    className=" text-sky-200"
+                > (You can also download my resume)
+                </Link>
             </p>
             <div className="flex gap-x-4 pt-4">
                 <Link
