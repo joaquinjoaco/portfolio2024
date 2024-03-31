@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // local imports.
 import { cn } from "@/lib/utils";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
 import { mobileProjects } from "@/lib/projectRoutes";
 import { ExternalLink } from "lucide-react";
 import { ListItem } from "./ui/list-item";

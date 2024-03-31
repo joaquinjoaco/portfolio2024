@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Download, ExternalLink, Github, Linkedin } from "lucide-react";
+import { ExternalLink, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 const About = ({
@@ -12,7 +12,7 @@ const About = ({
             id="about"
             className={cn("flex flex-col space-y-4 max-w-5xl mx-auto px-2 lg:px-16 w-full", className)}>
             <h1
-                className="text-2xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
+                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
                 About me
             </h1>
             <p

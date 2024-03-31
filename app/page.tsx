@@ -2,6 +2,7 @@ import About from "@/components/about-me";
 import { Header as MobileHeader } from "@/components/header";
 import { HeroParallax } from "@/components/hero-parallax";
 import { ParallaxScroll } from "@/components/parallax-scroll";
+import ProjectList from "@/components/project-list";
 import { desktopProjects, mobileProjects } from "@/lib/projectRoutes";
 
 export default function Home() {
@@ -17,7 +18,8 @@ export default function Home() {
         projects={mobileProjects}
         className="lg:hidden"
       />
-      <About className="scroll-m-32 sm:scroll-m-80 h-[100vh]" />
+      <About className="scroll-m-32 sm:scroll-m-80 h-[80vh]" />
+      <ProjectList />
     </div>
   );
 }
