@@ -22,11 +22,12 @@ const ProjectList = ({
 
                 <div className="flex flex-col gap-y-16 py-8">
                     {/* Projects */}
-                    {mobileProjects.map((project) => (
+                    {mobileProjects.map((project, idx) => (
                         <Link
                             href={project.href}
                             target="_blank"
                             className="group relative flex justify-between border-b pb-8  lg:justify-between lg:gap-x-8"
+                            key={idx}
                         >
                             <ExternalLink className="absolute opacity-0 lg:group-hover:opacity-100 h-16 w-16 top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all" />
                             <div className="lg:group-hover:brightness-50 transition-all">
