@@ -12,12 +12,12 @@ export const desktopProjects = [
     },
     {
         title: "Bandicoot 2024",
-        href: "https://github.com/joaquinjoaco/bandicoot-2024",
+        href: "https://bandicoot-2024.vercel.app/",
         thumbnail: "/bandicoot-2024.png",
     },
     {
         title: "Ecommerce Store",
-        href: "https://github.com/joaquinjoaco/ecommerce-store/",
+        href: "https://ecommerce-store-ten-sandy.vercel.app/",
         thumbnail: "/ecommerce-store.png",
     },
     {
@@ -32,7 +32,7 @@ export const desktopProjects = [
     },
     {
         title: "Ecommerce Admin",
-        href: "https://github.com/joaquinjoaco/ecommerce-admin",
+        href: "https://ecommerce-admin-five-gamma.vercel.app/",
         thumbnail: "/ecommerce-admin.png",
     },
     {
@@ -47,7 +47,7 @@ export const desktopProjects = [
     },
     {
         title: "Eventyr Banlist",
-        href: "https://github.com/joaquinjoaco/eventyrbanlist",
+        href: "https://eventyrbanlistfirebaserealtime.netlify.app/",
         thumbnail: "/eventyrfirebase.png",
     },
     {
@@ -67,7 +67,7 @@ export const desktopProjects = [
     },
     {
         title: "Laundrify CRUD",
-        href: "https://github.com/joaquinjoaco/laundrify-crud",
+        href: "https://laundrifycrudtest.netlify.app/",
         thumbnail: "/laundrify-crud.png",
     },
     {
@@ -97,7 +97,7 @@ export const mobileProjects = [
     },
     {
         title: "Bandicoot 2024",
-        href: "https://github.com/joaquinjoaco/bandicoot-2024",
+        href: "https://bandicoot-2024.vercel.app/",
         thumbnail: "/bandicoot-2024.png",
         description: "Bandicoot Software Website. Made with NextJS 14, Tailwind CSS and ShadCN UI."
     },
@@ -122,13 +122,13 @@ export const mobileProjects = [
 
     {
         title: "Ecommerce Store",
-        href: "https://github.com/joaquinjoaco/ecommerce-store/",
+        href: "https://ecommerce-store-ten-sandy.vercel.app/",
         thumbnail: "/ecommerce-store.png",
         description: "Sports store currently in development. Made with NextJS 14, Typescript, MercadoPago, Tailwind, HeadlessUI for some components, Zustand, and Zod."
     },
     {
         title: "Ecommerce Admin",
-        href: "https://github.com/joaquinjoaco/ecommerce-admin",
+        href: "https://ecommerce-admin-five-gamma.vercel.app/",
         thumbnail: "/ecommerce-admin.png",
         description: "Currently in development. Ecommerce admin panel. Manage all content from here and get the corresponding API routes. Made with NextJS 14, Typescript, Clerk auth, Tailwind, Shadcn, Prisma, MySQL, and Zod."
     },
@@ -152,7 +152,7 @@ export const mobileProjects = [
     },
     {
         title: "Eventyr Banlist",
-        href: "https://github.com/joaquinjoaco/eventyrbanlist",
+        href: "https://eventyrbanlistfirebaserealtime.netlify.app/",
         thumbnail: "/eventyrfirebase.png",
         description: "React firebase CRUD web app that utilizes firebase realtime database."
     },
