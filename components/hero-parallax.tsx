@@ -12,6 +12,7 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { Header } from "./header";
+import { ExternalLink } from "lucide-react";
 
 export const HeroParallax = ({
     projects,
@@ -77,7 +78,7 @@ export const HeroParallax = ({
             >
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
                     {firstRow.map((project) => (
-                        <ProductCard
+                        <ProjectCard
                             project={project}
                             translate={translateX}
                             key={project.title}
@@ -86,7 +87,7 @@ export const HeroParallax = ({
                 </motion.div>
                 <motion.div className="flex flex-row  mb-20 space-x-20 ">
                     {secondRow.map((product) => (
-                        <ProductCard
+                        <ProjectCard
                             project={product}
                             translate={translateXReverse}
                             key={product.title}
@@ -95,7 +96,7 @@ export const HeroParallax = ({
                 </motion.div>
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
                     {thirdRow.map((product) => (
-                        <ProductCard
+                        <ProjectCard
                             project={product}
                             translate={translateX}
                             key={product.title}
@@ -107,7 +108,7 @@ export const HeroParallax = ({
     );
 };
 
-export const ProductCard = ({
+export const ProjectCard = ({
     project,
     translate,
 }: {
@@ -127,7 +128,7 @@ export const ProductCard = ({
                 y: -20,
             }}
             key={project.title}
-            className="group/product h-[24rem] w-[24rem] relative flex-shrink-0"
+            className="group/project h-[24rem] w-[24rem] relative flex-shrink-0"
         >
             <Link
                 href={project.href}
@@ -138,11 +139,16 @@ export const ProductCard = ({
                     src={project.thumbnail}
                     height="400"
                     width="400"
-                    className="object-cover object-top absolute h-full w-full inset-0 rounded-2xl shadow-2xl dark:shadow-none dark:opacity-80 dark:hover:opacity-100 transition-opacity"
+                    className="object-cover object-top absolute h-full w-full inset-0 rounded-2xl shadow-2xl dark:shadow-none"
                     alt={project.title}
                 />
-                <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 pointer-events-none"></div>
-                <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white font-semibold bg-gradient-to-r from-orange-600 to-fuchsia-800 rounded-2xl py-2 px-4">
+
+                <div className="absolute lg:group-hover/project:backdrop-blur-sm rounded-2xl w-full h-full">
+                    <div className="absolute flex items-center justify-center w-full h-full bg-black/50 opacity-0 rounded-2xl lg:group-hover/project:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity">
+                        <ExternalLink className="text-white h-16 w-16" />
+                    </div>
+                </div>
+                <h2 className="absolute -top-12  opacity-0 text-white font-semibold translate-y-12 lg:group-hover/project:translate-y-0 lg:group-hover/project:opacity-100 bg-gradient-to-r from-orange-600 to-fuchsia-800 rounded-2xl py-2 px-4 transition-all">
                     {project.title}
                 </h2>
             </Link>

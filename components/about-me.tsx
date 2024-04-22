@@ -10,36 +10,26 @@ const About = ({
     return (
         <div
             id="about"
-            className={cn("flex flex-col space-y-4 max-w-5xl mx-auto px-2 lg:px-16 w-full", className)}>
-            <h1
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
+            className={cn("flex flex-col space-y-4 max-w-5xl mx-auto px-2 lg:px-16 w-full mb-16", className)}
+        >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
                 About me
             </h1>
-            <p
-                className="font-sans text-base md:text-xl tracking-tight text-pretty">
-                I graduated from Technological Secondary Education in Computer Science. I am currently pursuing a technical degree in such field.
-
+            <div className="font-sans text-base md:text-xl tracking-tight text-pretty">
+                I am currently pursuing a technical degree in Computer Science. I specialize in Front-end development, despite this, I am venturing into back-end development to have more complete skillset.
+                <br />
+                <br />
                 One of the things I love about this industry is the opportunity to be creative and come up with new, great ideas, opening the door to explore new solutions that can positively impact both the customer and the team.
                 <br />
-                <br />
-                I am constantly evolving in the fields of web development and both User Experience and User Interface design.
-
-                I am currently working with a range of tools and technologies such as NextJS,
-                React / React Native, Javascript, Typescript, HTML, CSS, MySQL, PostgreSQL, Prisma, TablePlus,
-                Firebase, Github, Figma.
-                <br />
-                I have also used VueJS, Angular, VB .NET, C/C++ and Java.
+                I consistently adopt the mindset of going a step beyond in each project by continuously learning. I am always willing and excited to learn new technologies and languages.
                 <br />
                 <br />
-                {/* Check out my Linkedin & GitHub!
-                <Link
-                    href={"https://drive.google.com/file/d/1z3wG_oBuzhRWHJNweGId3dgk9AtOx8xK/view"}
-                    target="_blank"
-                    className="text-sky-600 dark:text-sky-300 "
-                > (You can also download my resume)
-                </Link> */}
-            </p>
-            <div className="flex flex-col">
+                <p className="font-semibold">These are the tools, technologies and languages that I currently work with:</p>
+                NextJS, React / React Native, Javascript, Typescript, HTML, CSS, Tailwind CSS, MySQL, PostgreSQL, Prisma, TablePlus, Github, Docker, Figma.
+                <br />
+                In the past I have also used VueJS, Angular, Firebase, VB .NET, Java, C/C++ (classes, data structures, algorithms and pointers).
+            </div>
+            <div className="flex flex-col py-8">
                 <div>
                     Check out my Linkedin & GitHub!
                     <Link

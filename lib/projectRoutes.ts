@@ -71,9 +71,9 @@ export const desktopProjects = [
         thumbnail: "/laundrify-crud.png",
     },
     {
-        title: "MiFicha APP",
-        href: "https://github.com/joaquinjoaco/ficha-medica",
-        thumbnail: "/ficha-medica.png",
+        title: "Bikes workshop",
+        href: "https://tourmalet-workshop-demo.vercel.app/",
+        thumbnail: "/bikes-workshop.png",
     },
     {
         title: "La física segun dios",
