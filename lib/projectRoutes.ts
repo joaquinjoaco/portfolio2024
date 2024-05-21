@@ -1,8 +1,8 @@
 // Desktop projects array for Parallax Hero.
 export const desktopProjects = [
     {
-        title: "Bikes workshop",
-        href: "https://tourmalet-workshop-demo.vercel.app/",
+        title: "Cycling workshop",
+        href: "https://cycling-workshop-demo.vercel.app",
         thumbnail: "/bikes-workshop.png",
     },
     {
@@ -71,8 +71,8 @@ export const desktopProjects = [
         thumbnail: "/laundrify-crud.png",
     },
     {
-        title: "Bikes workshop",
-        href: "https://tourmalet-workshop-demo.vercel.app/",
+        title: "Cycling workshop",
+        href: "https://cycling-workshop-demo.vercel.app",
         thumbnail: "/bikes-workshop.png",
     },
     {
@@ -90,10 +90,10 @@ export const desktopProjects = [
 // Mobile projects array for ParallaxScroller & other appliances.
 export const mobileProjects = [
     {
-        title: "Bikes workshop",
-        href: "https://tourmalet-workshop-demo.vercel.app/",
+        title: "Cycling workshop",
+        href: "https://cycling-workshop-demo.vercel.app",
         thumbnail: "/bikes-workshop.png",
-        description: "Bikes workshop webapp. NextJS 14, Tailwind CSS, ShadCN UI, Prisma, PostgreSQL. Communicates with another small app to show a service information to a client."
+        description: "Cycling workshop. NextJS 14, Tailwind CSS, ShadCN UI, Prisma, PostgreSQL. Communicates with another small app to show a service information to a client."
     },
     {
         title: "Bandicoot 2024",

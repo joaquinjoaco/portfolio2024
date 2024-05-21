@@ -18,7 +18,7 @@ export default function Home() {
         projects={mobileProjects}
         className="lg:hidden"
       />
-      <About className="scroll-m-32 sm:scroll-m-80 h-[80vh]" />
+      <About className="scroll-m-32 sm:scroll-m-80 mt-0 md:mt-8" />
       <ProjectList />
     </div>
   );
