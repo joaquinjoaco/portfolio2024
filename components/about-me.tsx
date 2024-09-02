@@ -16,7 +16,7 @@ const About = ({
                 About me
             </h1>
             <div className="font-sans text-base md:text-xl tracking-tight text-pretty">
-                I am currently pursuing a technical degree in Computer Science. I specialize in Front-end development, despite this, I am venturing into back-end development to have more complete skillset.
+                I am currently pursuing a technical degree in Computer Science. I specialize in Front-end development, but I am also venturing into back-end development to have more complete skillset.
                 <br />
                 <br />
                 One of the things I love about this industry is the opportunity to be creative and come up with new, great ideas, opening the door to explore new solutions that can positively impact both the customer and the team.
