@@ -12,18 +12,19 @@ const About = ({
             id="about"
             className={cn("flex flex-col space-y-4 max-w-5xl mx-auto px-2 lg:px-16 w-full mb-32", className)}
         >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
+            {/* <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
                 About me
-            </h1>
-            <div className="font-sans text-base md:text-xl tracking-tight text-pretty">
-                I am currently pursuing a technical degree in Computer Science. I specialize in Front-end development, but I am also venturing into back-end development to have more complete skillset.
-                <br />
-                <br />
-                One of the things I love about this industry is the opportunity to be creative and come up with new, great ideas, opening the door to explore new solutions that can positively impact both the customer and the team.
-                <br />
-                I consistently adopt the mindset of going a step beyond in each project by continuously learning. I am always willing and excited to learn new technologies and languages.
-                <br />
-                <br />
+            </h1> */}
+            <div className="font-sans text-base md:text-xl tracking-tight text-pretty space-y-4">
+                <p className="font-bold">
+                    I am currently pursuing a technical degree in Computer Science. I specialize in Front-end development, but I am also venturing into back-end development to have more complete skillset.
+                </p>
+                <p>
+                    One of the things I love about this industry is the opportunity to be creative and come up with new, great ideas, opening the door to explore new solutions that can positively impact both the customer and the team.
+                </p>
+                <p>
+                    I consistently adopt the mindset of going a step beyond in each project by continuously learning. I am always willing and excited to learn new technologies and languages.
+                </p>
                 <p className="font-semibold">These are the tools, technologies and languages that I currently work with:</p>
                 NextJS, React / React Native, Javascript, Typescript, HTML, CSS, Tailwind CSS, MySQL, PostgreSQL, Prisma, TablePlus, Github, Docker, Figma.
                 <br />
@@ -32,13 +33,14 @@ const About = ({
             <div className="flex flex-col py-8">
                 <div>
                     Check out my Linkedin & GitHub!
-                    <Link
+                    {/* <Link
                         href={"https://drive.google.com/file/d/1z3wG_oBuzhRWHJNweGId3dgk9AtOx8xK/view"}
                         target="_blank"
                         className="flex items-center text-sky-600 dark:text-sky-300"
                         title="Google Drive"
-                    ><ExternalLink className="h-4 w-4 mr-2" />You can also download/view my resume
-                    </Link>
+                    >
+                        <ExternalLink className="h-4 w-4 mr-2" />You can also download/view my resume
+                    </Link> */}
                 </div>
                 <div className="flex gap-x-4 pt-4">
                     <Link
@@ -48,7 +50,7 @@ const About = ({
                         className="p-4 rounded-2xl border hover:bg-foreground hover:text-background transition-colors"
                     >
                         <div>
-                            <Linkedin className="h-8 w-8" />
+                            <Linkedin className="h-8 w-8 mb-1" />
                             <p className="text-muted-foreground text-sm">
                                 joaquingomezleites
                             </p>
@@ -61,7 +63,7 @@ const About = ({
                         className="p-4 rounded-2xl border hover:bg-foreground hover:text-background transition-colors"
                     >
                         <div>
-                            <Github className="h-8 w-8" />
+                            <Github className="h-8 w-8 mb-1" />
                             <p className="text-muted-foreground text-sm">
                                 joaquinjoaco
                             </p>
